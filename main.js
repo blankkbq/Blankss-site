@@ -1,1 +1,1 @@
-console.log('Blankss site loaded successfully');
+console.log('Blankss site loaded');
