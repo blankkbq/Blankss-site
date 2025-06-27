@@ -1,42 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Blankss - Bringing your designs to life!">
-  <title>Blankss | Bringing your designs to life</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blankss BQ | Bringing Your Designs to Life</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Blankss</h1>
-    <p>Bringing your designs to life!</p>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Products</a>
-      <a href="#">Upload</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
-  <main>
-    <section class="intro">
-      <h2>Start Designing</h2>
-      <p>Upload your design and preview it on high-quality mockups like tees, hoodies, and mugs.</p>
+    <header>
+        <img src="images/logo.png" alt="Blankss BQ Logo" class="logo">
+        <nav>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Bringing Your Designs to Life!</h1>
+        <p>Design your own T-Shirts, Hoodies, Caps, Mugs & more.</p>
+        <button onclick="document.getElementById('upload').scrollIntoView()">Start Designing</button>
     </section>
-    <section class="upload">
-      <h2>Upload Your Design</h2>
-      <input type="file" accept="image/*" />
+
+    <section id="products">
+        <h2>Our Best Sellers</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="images/tshirt.jpg" alt="T-Shirt">
+                <h3>Basic Cotton T-Shirt</h3>
+                <p>Gildan G500 - Affordable quality for your custom designs.</p>
+            </div>
+            <div class="product">
+                <img src="images/hoodie.jpg" alt="Hoodie">
+                <h3>Retail Hoodie</h3>
+                <p>Bella Canvas 3719 - Cozy and stylish, perfect for your brand.</p>
+            </div>
+            <div class="product">
+                <img src="images/cap.jpg" alt="Cap">
+                <h3>Snapback</h3>
+                <p>Classic look with room for your custom touch.</p>
+            </div>
+        </div>
     </section>
-    <section class="mockups">
-      <h2>Mockup Gallery</h2>
-      <p>Preview your uploaded designs on various products here.</p>
-      <div class="placeholder">[Mockup Preview Area]</div>
+
+    <section id="upload">
+        <h2>Upload Your Design</h2>
+        <input type="file" id="designUpload">
+        <button onclick="previewDesign()">Preview Design</button>
+        <div id="designPreview"></div>
     </section>
-  </main>
-  <footer>
-    <p>Contact us at: blankssbq@gmail.com</p>
-    <p>Follow us on IG: @blankssbq</p>
-  </footer>
-  <script src="assets/js/main.js"></script>
+
+    <section id="about">
+        <h2>About Blankss</h2>
+        <p>Blankss BQ is your go-to for high-quality, customizable clothing and merchandise. Proudly based in the Caribbean, we help you bring your ideas to life on the products you love.</p>
+    </section>
+
+    <section id="faq">
+        <h2>FAQ & Shipping</h2>
+        <p>We ship worldwide. Delivery times vary based on location. Have more questions? Contact us below!</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact & Support</h2>
+        <p>Need help? Chat with us on <a href="https://wa.me/5997908584" target="_blank">WhatsApp</a> or email <a href="mailto:blankssbq@gmail.com">blankssbq@gmail.com</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Blankss BQ. Bringing your designs to life!</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
